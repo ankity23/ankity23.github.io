@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Engagement</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="section-1">
+        <span>Ankit & Pooja</span>
+        <span class="abc">
+            Got engaged    
+        </span> 
+        </div>
+    </header>
+
+    <div class="section-2">
+        Here are some beautiful moments from the event.
+    </div>
+<div class="gallery">
+    <img src="img/1.JPG" alt="Image 1">
+    <img src="img/2.jpg" alt="Image 2">
+    <img src="img/3.JPG" alt="Image 3">  
+    <img src="img/4.JPG" alt="Image 1">
+    <img src="img/5.JPG" alt="Image 2">
+    <img src="img/6.JPG" alt="Image 3">
+    <img src="img/7.JPG" alt="Image 1">
+    <img src="img/8.jpg" alt="Image 2">
+    <img src="img/9.JPG" alt="Image 3">  
+    <img src="img/10.JPG" alt="Image 1">
+    <img src="img/11.JPG" alt="Image 2">
+    <img src="img/12.JPG" alt="Image 3">
+    <img src="img/13.JPG" alt="Image 3">
+    <img src="img/14.JPG" alt="Image 3">
+    <img src="img/15.JPG" alt="Image 3">
+    <img src="img/16.JPG" alt="Image 1">
+    <img src="img/17.JPG" alt="Image 2">
+    <img src="img/18.JPG" alt="Image 3">
+    <img src="img/19.JPG" alt="Image 3">
+    <img src="img/20.JPG" alt="Image 3">
+    <img src="img/21.JPG" alt="Image 3">
+    <img src="img/22.JPG" alt="Image 3">
+    <img src="img/23.JPG" alt="Image 3">
+    <img src="img/24.JPG" alt="Image 1">
+    <img src="img/25.JPG" alt="Image 2">
+    <img src="img/26.JPG" alt="Image 3">
+    <img src="img/27.JPG" alt="Image 3">
+    <img src="img/28.JPG" alt="Image 3">
+    <img src="img/29.JPG" alt="Image 3">
+    <img src="img/30.JPG" alt="Image 2">
+    <img src="img/31.JPG" alt="Image 3">
+    <img src="img/32.JPG" alt="Image 3">
+    <img src="img/33.JPG" alt="Image 3">
+    <img src="img/34.JPG" alt="Image 3">
+    <img src="img/35.JPG" alt="Image 3">
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <img id="modal-img" src="" alt="Popup Image">
+  </div>
+</div>
+<div class="extra">
+  Thank you for coming !!
+  </div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal
+  var images = document.querySelectorAll('.gallery img');
+  var modalImg = document.getElementById("modal-img");
+  images.forEach(function(img) {
+    img.addEventListener('click', function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
