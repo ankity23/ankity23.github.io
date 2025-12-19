@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marriage Album Anku-Piyu</title>
+  <style>
+    body {
+      background: #fdf3f3;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .title {
+      font-size: 32px;
+      margin-top: 10px;
+      color: #b30000;
+    }
+
+    #album {
+      width: 80vw;
+      aspect-ratio: 3 / 2;
+      margin: 0 auto;
+      height: 85vh;
+      position: relative;
+      top: 50%;
+      perspective: 1800px;
+    }
+
+    .page {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-origin: left center;
+      transition: transform 1.2s cubic-bezier(.25, .8, .25, 1);
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow:
+        0 5px 5px rgba(0, 0, 0, 0.25),
+        inset -8px 0 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #00000010;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.35);
+      border: none;
+      color: white;
+      font-size: 40px;
+      padding: 10px 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.25s ease;
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+
+    .nav-btn:hover {
+      background: rgba(0, 0, 0, 0.55);
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    @media (max-width: 600px) {
+      #album {
+        width: 95vw;
+        height: 75vh;
+      }
+
+      .nav-btn {
+        font-size: 28px;
+        padding: 8px 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="title">Our Marriage Album ❤️ </h1>
+
+  <div id="album">
+    <div class="page">
+      <img src="images/a.JPG" alt="photo 1">
+    </div>
+    <div class="page">
+      <img src="images/1.JPG" alt="photo 1">
+    </div>
+    <div class="page">
+      <img src="images/2.JPG" alt="photo 2">
+    </div>
+    <div class="page">
+      <img src="images/3.JPG" alt="photo 3">
+    </div>
+    <div class="page">
+      <img src="images/4.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/5.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/6.JPG" alt="photo 3">
+    </div>
+    <div class="page">
+      <img src="images/7.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/8.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/9.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/10.jpg" alt="photo 5">
+    </div>
+
+
+    <div class="page">
+      <img src="images/11.JPG" alt="photo 1">
+    </div>
+    <div class="page">
+      <img src="images/12.JPG" alt="photo 2">
+    </div>
+    <div class="page">
+      <img src="images/13.JPG" alt="photo 3">
+    </div>
+    <div class="page">
+      <img src="images/14.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/15.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/16.JPG" alt="photo 3">
+    </div>
+    <div class="page">
+      <img src="images/17.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/18.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/19.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/20.jpg" alt="photo 5">
+    </div>
+
+    <div class="page">
+      <img src="images/21.JPG" alt="photo 1">
+    </div>
+    <div class="page">
+      <img src="images/22.JPG" alt="photo 2">
+    </div>
+    <div class="page">
+      <img src="images/23.JPG" alt="photo 3">
+    </div>
+    <div class="page">
+      <img src="images/24.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/25.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/26.JPG" alt="photo 3">
+    </div>
+    <div class="page">
+      <img src="images/27.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/28.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/29.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/30.jpg" alt="photo 5">
+    </div>
+
+    <div class="page">
+      <img src="images/31.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/32.JPG" alt="photo 3">
+    </div>
+    <div class="page">
+      <img src="images/33.jpg" alt="photo 4">
+    </div>
+    <div class="page">
+      <img src="images/34.jpg" alt="photo 5">
+    </div>
+    <div class="page">
+      <img src="images/35.jpg" alt="photo 4">
+    </div>
+
+    <button class="nav-btn prev-btn" onclick="prevPage()">❮</button>
+    <button class="nav-btn next-btn" onclick="nextPage()">❯</button>
+  </div>
+
+  <script>
+    let pages = document.querySelectorAll(".page");
+    let current = 0;
+    pages.forEach((p, i) => {
+      p.style.zIndex = pages.length - i;
+    });
+
+    function nextPage() {
+      if (current < pages.length - 1) {
+        pages[current].style.transform = "rotateY(-180deg)";
+        pages[current].style.zIndex = current;
+        current++;
+      }
+    }
+
+    function prevPage() {
+      if (current > 0) {
+        current--;
+        pages[current].style.transform = "rotateY(0deg)";
+        pages[current].style.zIndex = pages.length - current;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
